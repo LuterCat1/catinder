@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cat-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cat-card img:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:hover {
+    background-color: #ff8b80;
+}
+
+.nope-btn {
+    background-color: #ff6f61;
+}
+
+.like-btn {
+    background-color: #4CAF50;
+}
+
+.swipe-left {
+    animation: swipe-left 0.5s forwards;
+}
+
+.swipe-right {
+    animation: swipe-right 0.5s forwards;
+}
+
+@keyframes swipe-left {
+    100% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+}
+
+@keyframes swipe-right {
+    100% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+}
