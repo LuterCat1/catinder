@@ -20,4 +20,4 @@ To run this project locally, you'll need a modern web browser. No additional sof
 1. **Clone the repository:**
 
    ```bash
-   [git clone https://github.com/LuterCat1/catinder.git](https://github.com/LuterCat1/catinder.git)
+   git clone https://github.com/LuterCat1/catinder.git
